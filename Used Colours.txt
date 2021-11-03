@@ -1,0 +1,2 @@
+Background: #f5f5f5/#E8E8E6
+Drop Shadow: #B5AED0
