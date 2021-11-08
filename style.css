@@ -12,6 +12,8 @@ nav{
     background:#E8E8E6;
     height: 80px;
     width:100%;
+    position: fixed;
+    top: 0;
 }
 label .logo{
     font-size: 35px;
@@ -105,5 +107,7 @@ a.active, a:hover{
         left: 0;
 
     }
-    #check:checked ~ label{
+}
+img{
+    width: 100%;
 }
