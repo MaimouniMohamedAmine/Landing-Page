@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 body{
+    background:#E8E8E6;
     font-family: "montserrat",sans-serif;
 }
 nav{
     background:#E8E8E6;
     height: 80px;
     width:100%;
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 label .logo{
@@ -56,20 +57,48 @@ a.active, a:hover{
 #check{
     display: none;
 }
-@media (max-width:1536px){
-    label.logo{
-        font-size: 30px;
-        margin-left: 50px;
+@media (min-width:1000px){
+    .logo-side {
+        margin: 1.4% 0% 0% 7%;
+        height: auto;
+        max-width: 6%;
+    
     }
     nav ul li a{
         font-size: 16px;
     }
+    .hidden{
+        display: none;
+    }
+    .Front{
+        display: flex;
+        padding: 3% ​0 3% 3%;
+    }
+    #logo-front{
+        width: 24%;
+        margin: 13% 0% 0% 6%;
+        padding: 0% 0% 0% 0%;
+        height: 63vh;
 }
+    .slgn{
+    margin:0% 0% 0% 0%;
+    padding:0% 0% 0% 0%;
+    }
+    .slgn h2{
+        margin: -5% 0% 12% 70%;    
+    }
+    #Desktop-UI{
+        width: 56%;
+        margin: 5% 0% 0% 5%;
+}   
 @media (max-width:872px){
     .checkbtn{
         display: block;   
     }
-    ul{
+    #logo-front{
+        display: none;
+    }
+    #menu{
         position: fixed;
         width:100%;
         height:100vh;
@@ -107,7 +136,9 @@ a.active, a:hover{
         left: 0;
 
     }
+    #Desktop-UI{
+        display: none;
+        }
 }
-img{
-    width: 100%;
+
 }
