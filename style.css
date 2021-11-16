@@ -7,7 +7,7 @@
 }
 body{
     background:#E8E8E6;
-    font-family: "montserrat",sans-serif;
+    font-family: 'Text Me One', sans-serif;
 }
 nav{
     background:#E8E8E6;
@@ -153,6 +153,24 @@ a.active, a:hover{
         margin: 12% 0% 0% 14%;
         width: 60%;
     }
+    .Worldwide{
+    height: auto;
+    width: 100%;
+    margin: 5% 0% 5% 33%;
+    }
+    .footer-1{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .footer-2{
+        margin: 0% 0% 0% 0%;
+        background-color: #c4c4c4;
+
+    }
+    span{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }
 @media (max-width:982px){
     .checkbtn{
@@ -212,4 +230,3 @@ a.active, a:hover{
         display: none;
         }
 }
-
