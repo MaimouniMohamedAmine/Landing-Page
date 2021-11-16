@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
+    font-family: 'Text Me One', sans-serif;
 }
+/*@font-face {
+    font-family: 'Text Me One Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Text Me One Regular'), url('TextMeOne-Regular.woff') format('woff');
+    }
+    */
+
 body{
     background:#E8E8E6;
-    font-family: 'Text Me One', sans-serif;
+    
 }
 nav{
     background:#E8E8E6;
@@ -79,9 +88,10 @@ a.active, a:hover{
         margin: 13% 0% 0% 6%;
         height: 100%;
     }
-    
+    /* Slogan*/
     .slgn h2{
-        margin: -5% 0% 12% 70%;    
+        font-size: 28px;
+        margin: -9% 0% 12% 70%;    
     }
     #Desktop-UI{
         width: 56%;
@@ -92,29 +102,45 @@ a.active, a:hover{
         justify-content: center;
         align-items: center;
     }
+    .product-desc li{
+        margin-left: 6%;
+        margin-top: 3%;
+    }
     .abt{
         margin: 0% 58% 0% 7%;
-
+        font-size: 20px;
+    }
+    .abt h1{
+        text-transform: uppercase;
+        margin: 0% 0% 5% 0%;
+       text-shadow:0px 5px 4px #B5AED0;
+    }
+    .Hoodie{
+        margin: -2% 0% 0% 5%;
     }
     .Hoodie img{
-        margin: -28% 0% 0% 49%;
+        margin: -33% 0% 1% 53%;
         height: auto;
-        max-width: 43%;
+        max-width: 33%;
     }
     .Hoodie p{       
-        margin: 1% 18% 0% 0%;
+        margin: -2% 15% 0% 0%;
         float: right;
+        font-weight: bold;
+        font-size: 21px;
     }
     .Hoodie h2{
         float: right;
-        margin: -2% 27% 0% 0%;
+        margin: -4% 27% 0% 0%;
+        font-weight: bolder;
     }
     /* Pre-order button*/
     .Shipping-big{
+        
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 6% 0% 0% 0%;
+        margin: 8% 0% -7% 0%;
     } 
     .Shipping-big #big{
         padding: 1.2% 2.5% 1.2% 2.5%;
@@ -132,7 +158,7 @@ a.active, a:hover{
     }
     .Shipping-big p{
         font-size: 15px;
-        margin: 6% 0% 0% -14.01%;
+        margin: 6% 0% 0% -13.03%;
         position: sticky;
     }
     /* Ordering mid section using css grid*/
@@ -140,10 +166,29 @@ a.active, a:hover{
         display: grid;
         grid-template-columns: auto auto auto ;
     }
+    .icons{
+        font-size: 20px;
+    }
     .icons i{
         /* used 80px because it's the distance difference in the mockup*/
         margin: 80px 0% 15% 34%;
         color: #B5AED0;
+    }
+    .icons #R{
+        text-transform: uppercase;
+    }
+    .icons #F{
+        margin: 0% 39% 0% 20%;
+    }
+    .icons #E{
+        margin: 0% 13% 0% 0%;
+    }
+    .icons #fast{
+        margin-left: 30%;
+
+    }
+    main{
+        margin: 10% 0% 0% 0%;
     }
     main .icons h2{
         text-align: center;
@@ -153,23 +198,49 @@ a.active, a:hover{
         margin: 12% 0% 0% 14%;
         width: 60%;
     }
-    .Worldwide{
-    height: auto;
-    width: 100%;
-    margin: 5% 0% 5% 33%;
+    .Worldwide img{
+        width: 98%;
+        margin: 7% 0% 5% 1%;
     }
     .footer-1{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 18% 22% 22% 0%;
+        justify-content: space-evenly;
+        background-color: #c4c4c4;
+        padding: 1.5% 9% 3% 6%;
     }
     .footer-2{
         margin: 0% 0% 0% 0%;
-        background-color: #c4c4c4;
-
+        
+    }
+    .footer-2 #bold-2{
+        padding: 2% 0% 0% 5%;
+    }
+    .footer-2 #bold-3{
+        margin: 0% 0% 0% 0%;
     }
     span{
         font-weight: bold;
         text-transform: uppercase;
+    }
+    footer ul{
+        list-style: none;
+    }
+    footer li{
+        margin-top: 5%;
+    }
+    .temoin{
+        font-size: 20px;
+    }
+    .temoin h3{
+        text-align: center;
+    }
+    .Adil img{
+        width: 30%;
+        margin: 0% 0% 3% 35%;
+    }
+    footer #bold-3 ul{
+        margin: 0% 20% 0% 20%;
     }
 }
 @media (max-width:982px){
